@@ -14,5 +14,4 @@ while true do
 	local clone = basePart:Clone()
 	clone.CFrame = root.CFrame * CFrame.new(math.random(-5,5), math.random(1,5), math.random(-5,5))
 	clone.Parent = workspace
-	task.wait(0.1) -- Spawns a clone every 0.1 seconds
 end
