@@ -131,6 +131,7 @@ G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["e"]["Text"] = [[[fflag]];
 G2L["e"]["Name"] = [[fflagname]];
 
+
 -- StarterGui.bloxstrap.main.MAIN.FFLag.TextButton
 G2L["f"] = Instance.new("TextButton", G2L["c"]);
 G2L["f"]["BorderSizePixel"] = 0;
@@ -570,7 +571,6 @@ G2L["3e"]["Position"] = UDim2.new(0, 0, 0.10811, 0);
 
 -- StarterGui.bloxstrap.main.FRAMES.FFLags.FFLags.main.Frame.FFLag
 G2L["3f"] = Instance.new("TextBox", G2L["3c"]);
-G2L["3f"]["SelectionStart"] = 1;
 G2L["3f"]["Name"] = [[FFLag]];
 G2L["3f"]["BorderSizePixel"] = 0;
 G2L["3f"]["TextSize"] = 14;
@@ -628,7 +628,6 @@ G2L["44"]["Position"] = UDim2.new(0, 0, 0.10811, 0);
 
 -- StarterGui.bloxstrap.main.FRAMES.FFLags.FFLags.main.Frame.FFLag
 G2L["45"] = Instance.new("TextBox", G2L["42"]);
-G2L["45"]["SelectionStart"] = 1;
 G2L["45"]["Name"] = [[FFLag]];
 G2L["45"]["BorderSizePixel"] = 0;
 G2L["45"]["TextSize"] = 14;
@@ -806,6 +805,9 @@ local function C_18()
 	local script = G2L["18"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
+			if v.ClassName~='Frame' then
+				continue
+			end
 			if v.Name==script.Parent.Text then
 				v.Visible=true
 			else
@@ -820,6 +822,9 @@ local function C_1b()
 	local script = G2L["1b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
+			if v.ClassName~='Frame' then
+				continue
+			end
 			if v.Name==script.Parent.Text then
 				v.Visible=true
 			else
@@ -834,6 +839,9 @@ local function C_1e()
 	local script = G2L["1e"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
+			if v.ClassName~='Frame' then
+				continue
+			end
 			if v.Name==script.Parent.Text then
 				v.Visible=true
 			else
