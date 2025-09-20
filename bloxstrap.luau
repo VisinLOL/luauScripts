@@ -128,7 +128,7 @@ G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["BackgroundTransparency"] = 1;
 G2L["e"]["Size"] = UDim2.new(0, 175, 0, 23);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[[fflag]]];
+G2L["e"]["Text"] = [[[fflag]];
 G2L["e"]["Name"] = [[fflagname]];
 
 
