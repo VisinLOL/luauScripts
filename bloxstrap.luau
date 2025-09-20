@@ -128,9 +128,8 @@ G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["BackgroundTransparency"] = 1;
 G2L["e"]["Size"] = UDim2.new(0, 175, 0, 23);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[[fflag]]];
+G2L["e"]["Text"] = [[[fflag]];
 G2L["e"]["Name"] = [[fflagname]];
-
 
 -- StarterGui.bloxstrap.main.MAIN.FFLag.TextButton
 G2L["f"] = Instance.new("TextButton", G2L["c"]);
@@ -657,7 +656,7 @@ G2L["47"] = Instance.new("LocalScript", G2L["45"]);
 
 -- StarterGui.bloxstrap.main.close.LocalScript
 local function C_9()
-local script = G2L["9"];
+	local script = G2L["9"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
@@ -665,27 +664,27 @@ end;
 task.spawn(C_9);
 -- StarterGui.bloxstrap.main.DRAG
 local function C_a()
-local script = G2L["a"];
+	local script = G2L["a"];
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	local gui = script.Parent
-	
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-	
+
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-			
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -693,13 +692,13 @@ local script = G2L["a"];
 			end)
 		end
 	end)
-	
+
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
@@ -709,13 +708,13 @@ end;
 task.spawn(C_a);
 -- StarterGui.bloxstrap.main.MAIN
 local function C_b()
-local script = G2L["b"];
+	local script = G2L["b"];
 	local getgenv = getgenv or function() return _G end
 	local newcclosure = newcclosure or function(f) return f end
 	local blankfunction=function(...)return{}end
 	local getgc=getgc or blankfunction
 	local getinfo=debug.getinfo or blankfunction
-	
+
 	getgenv().notify = newcclosure(function(_)
 		return game:GetService('StarterGui'):SetCore('SendNotification',{
 			Title='BloxStrap';
@@ -724,19 +723,19 @@ local script = G2L["b"];
 			Button1='OK';
 		})
 	end)
-	
+
 	local notify = getgenv().notify
-	
+
 	local getfflag = getfflag or nil
 	local setfflag = setfflag or nil
 	local found = false
-	
+
 	local FRAMES=script.Parent.FRAMES
 	local FFLagEditor=FRAMES.FFLagEditor
 	local FFLagTemplate=script:WaitForChild('FFLag')
 	local FFLagAddFrame=FFLagEditor.FFLagAdd
 	local FFLagAddButton=FFLagEditor.addfflag
-	
+
 	if setfflag and getfflag == nil then
 		for _,v in next, getgc(true) do
 			if typeof(v) == "function" then
@@ -753,15 +752,15 @@ local script = G2L["b"];
 			end
 		end
 	end
-	
+
 	if not found then
 		notify'There is no setfflag/getfflag or both function! FFlag will not work.'
 	end
-	
+
 	FFLagAddButton.MouseButton1Click:Connect(function()
 		FFLagAddFrame.Visible=true
 	end)
-	
+
 	FFLagAddFrame.addfflag.MouseButton1Click:Connect(function()
 		FFLagAddFrame.Visible=false
 		local FFLagToAdd=FFLagAddFrame.FFLag.Text
@@ -784,7 +783,7 @@ end;
 task.spawn(C_b);
 -- StarterGui.bloxstrap.main.MAIN.FFLag.TextButton.LocalScript
 local function C_12()
-local script = G2L["12"];
+	local script = G2L["12"];
 	local on=true
 	script.
 		Parent.
@@ -804,7 +803,7 @@ end;
 task.spawn(C_12);
 -- StarterGui.bloxstrap.main.OPTIONS.op.LocalScript
 local function C_18()
-local script = G2L["18"];
+	local script = G2L["18"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
 			if v.Name==script.Parent.Text then
@@ -818,7 +817,7 @@ end;
 task.spawn(C_18);
 -- StarterGui.bloxstrap.main.OPTIONS.op.LocalScript
 local function C_1b()
-local script = G2L["1b"];
+	local script = G2L["1b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
 			if v.Name==script.Parent.Text then
@@ -832,7 +831,7 @@ end;
 task.spawn(C_1b);
 -- StarterGui.bloxstrap.main.OPTIONS.op.LocalScript
 local function C_1e()
-local script = G2L["1e"];
+	local script = G2L["1e"];
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,v in pairs(script.Parent.Parent.Parent.FRAMES:GetChildren()) do
 			if v.Name==script.Parent.Text then
@@ -846,9 +845,9 @@ end;
 task.spawn(C_1e);
 -- StarterGui.bloxstrap.main.FRAMES.Integrations.FFLags.main.Frame.btn.LocalScript
 local function C_36()
-local script = G2L["36"];
+	local script = G2L["36"];
 	local b= not true
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if not b then
 			b=true
@@ -860,8 +859,8 @@ local script = G2L["36"];
 					Found.SoundId = "rbxassetid://1237557124"
 				end
 			end
-	
-	
+
+
 			function updatePlayer(plr)
 				plr.CharacterAdded:Connect(function(char)
 					local RootPart = char:FindFirstChild("HumanoidRootPart")
@@ -882,15 +881,15 @@ local script = G2L["36"];
 					end
 				end
 			end
-	
+
 			for _, newplr in pairs(game.Players:GetPlayers()) do
 				updatePlayer(newplr)
 			end
-	
+
 			game.Players.PlayerAdded:Connect(function(newplr)
 				updatePlayer(newplr)
 			end)
-	
+
 			game.Workspace.ChildAdded:Connect(function(char)
 				task.wait(1)
 				local RootPart = char:FindFirstChild("HumanoidRootPart")
@@ -906,13 +905,13 @@ local script = G2L["36"];
 			script.Parent.Text='ON'
 			local function replaceDeathSound(RootPart)
 				if not RootPart then return end
-	
+
 				-- Remove existing "Died" sound if it exists
 				local oldSound = RootPart:FindFirstChild("Died")
 				if oldSound then
 					oldSound:Destroy()
 				end
-	
+
 				-- Create and inject new sound
 				local newSound = Instance.new("Sound")
 				newSound.Name = "Died"
@@ -921,25 +920,25 @@ local script = G2L["36"];
 				newSound.PlayOnRemove = true
 				newSound.Parent = RootPart
 			end
-	
+
 			function updatePlayer(plr)
 				plr.CharacterAdded:Connect(function(char)
 					local RootPart = char:FindFirstChild("HumanoidRootPart")
 					replaceDeathSound(RootPart)
 				end)
-	
+
 				if plr.Character then
 					local RootPart = plr.Character:FindFirstChild("HumanoidRootPart")
 					replaceDeathSound(RootPart)
 				end
 			end
-	
+
 			for _, newplr in pairs(game.Players:GetPlayers()) do
 				updatePlayer(newplr)
 			end
-	
+
 			game.Players.PlayerAdded:Connect(updatePlayer)
-	
+
 			game.Workspace.ChildAdded:Connect(function(char)
 				task.wait(1)
 				local RootPart = char:FindFirstChild("HumanoidRootPart")
@@ -951,7 +950,7 @@ end;
 task.spawn(C_36);
 -- StarterGui.bloxstrap.main.FRAMES.FFLags.FFLags.main.Frame.FFLag.LocalScript
 local function C_41()
-local script = G2L["41"];
+	local script = G2L["41"];
 	script.Parent:GetPropertyChangedSignal('Text'):Connect(function()
 		local a,b=pcall(tonumber,script.Parent.Text)
 		if a==nil then return end
@@ -962,24 +961,24 @@ local script = G2L["41"];
 				break
 			end
 		end
-		
+
 		function setfps(num:string)
 			setfflag('FIntTaskSchedulerTargetFps',num)
 		end
-		
+
 		setfps(script.Parent.Text)
-		
+
 	end)
 end;
 task.spawn(C_41);
 -- StarterGui.bloxstrap.main.FRAMES.FFLags.FFLags.main.Frame.FFLag.LocalScript
 local function C_47()
-local script = G2L["47"];
+	local script = G2L["47"];
 	script.Parent:GetPropertyChangedSignal('Text'):Connect(function()
 		local a,tech=pcall(function(txt:string)
 			if not Enum.Technology[txt] then return nil else return Enum.Technology[txt] end
 		end,script.Parent.Text)
-		
+
 		local setfflag = nil
 		for _, v in next, getgc(true) do
 			if typeof(v) == "function" and islclosure(v) and debug.getinfo(v).name == "setfflag" then
@@ -987,9 +986,9 @@ local script = G2L["47"];
 				break
 			end
 		end
-		
+
 		if tech==nil then return end
-		
+
 		if tech==Enum.Technology.Future then
 			setfflag("FFlagDebugForceFutureIsBrightPhase2", "False")
 			setfflag("DFFlagDebugRenderForceTechnologyVoxel", "False")
