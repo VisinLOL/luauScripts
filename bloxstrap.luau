@@ -462,16 +462,16 @@ local script = G2L["b"];
 	FFLagAddFrame.addfflag.MouseButton1Click:Connect(function()
 		FFLagAddFrame.Visible=false
 		local FFLagToAdd=FFLagAddFrame.FFLag.Text
-		setfflag(FFLagToAdd,true)
+		setfflag(true,FFLagToAdd)
 		local FFLagTempCached=FFLagTemplate:Clone()
 		FFLagTempCached.Parent=FFLagEditor.FFLags
 		FFLagTempCached.TextButton.MouseButton1Click:Connect(function()
 			if FFLagTempCached.TextButton.Text=='ON' then
-				setfflag(FFLagToAdd,not getfflag(FFLagToAdd))
+				setfflag(true,FFLagToAdd)
 				FFLagTempCached.TextButton.Text="OFF"
 				FFLagTempCached.TextButton.BackgroundColor3=Color3.fromRGB(134, 0, 0)
 			else
-				setfflag(FFLagToAdd,not getfflag(FFLagToAdd))
+				setfflag(false,FFLagToAdd)
 				FFLagTempCached.TextButton.Text="ON"
 				FFLagTempCached.TextButton.BackgroundColor3=Color3.fromRGB(0, 134, 0)
 			end
