@@ -1,0 +1,37 @@
+local hupermodule={}
+
+local old_replication=game:GetService('NetworkClient'):FindFirstChild(
+	'ReplicationSettings'
+):Clone()
+
+function debugprint(...:string)
+	print('[hupermodule]: '.. ...)
+end
+
+hupermodule.locate_root_model=function()
+	for _, obj in pairs(getgc(true)) do
+		if typeof(obj) == "table" and rawget(obj, "RootModel") then
+			debugprint('RootModel Found')
+			return obj
+		end
+	end
+	return nil
+end
+
+hupermodule.replication_return=function(put:boolean)
+	if put==true then
+		if game:GetService('NetworkClient'):FindFirstChild('ReplicationSettings')==nil then
+			old_replication:Clone().Parent=game:GetService('NetworkClient')
+		else
+			debugprint('ReplicationSettings already exists!')
+		end
+	else
+		if game:GetService('NetworkClient'):FindFirstChild('ReplicationSettings')~=nil then
+			game:GetService('NetworkClient'):FindFirstChild('ReplicationSettings'):Destroy()
+		else
+			debugprint('ReplicationSettings already deleted!')
+		end
+	end
+end
+
+return hupermodule
